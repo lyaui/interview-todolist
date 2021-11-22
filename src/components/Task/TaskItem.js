@@ -7,7 +7,7 @@ const TaskItem = ({ task }) => {
     ? 'bg-gray-200 cursor-not-allowed'
     : 'bg-green hover:bg-green-dark';
 
-  const taskTextStyle = isCompleted && 'text-gray-400 line-through';
+  const taskTextStyle = isCompleted ? 'text-gray-400 line-through' : '';
 
   return (
     <li className='flex items-center py-2'>
